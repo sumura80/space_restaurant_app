@@ -1,0 +1,9 @@
+<h1>Restaurant information</h1>
+
+<h2><%= @store.title %></h2>
+<p><%= @store.description %></p>
+<p><%= @store.company %></p>
+
+<%= link_to "Back" , root_path, class: 'btn btn-default btn-custom' %>
+<%= link_to "Edit" , edit_store_path(@store), class: 'btn btn-default btn-custom' %>
+<%= link_to "Delete" , store_path(@store), method: :delete, data:{confirm:'Are you sure?'}, class: 'btn btn-danger btn-custom' %>

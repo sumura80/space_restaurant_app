@@ -1,0 +1,25 @@
+	<% if @stores.blank? %>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>There is no post yet!</h1>
+        <h3>Would you like to post a fantastic restaurant in space?</h3><br><br>
+        <p><%= link_to "New Post", new_store_path , class:"btn btn-success btn-lg "%></p><br>
+        <%= image_tag('space_brand.JPG', { class: 'jumbotron_banner', alt: 'jumbotron_banner'})%>
+        
+      </div>
+    </div>
+    <% else %>
+    <h2>☆Space Restaurant☆</h2>
+    <p class="comment_title">Please post your favorite restaurant in space!</p>
+   <% end %>
+ 
+<% @stores.each do |store| %>
+	<div class="index_messages">
+		<h2 class="index_title"><%= link_to store.title, store %></h2>
+    <p>Description:</p>
+		<p class="index_description"><%= store.description %></p>
+	  <p class="index_company">Restrauant's name: <%= store.company %></p>
+	</div>
+<% end %>
+
+ 
