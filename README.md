@@ -1,24 +1,14 @@
-# README
+### README
+### Name: Space Restaurant
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Overview:
+宇宙に存在するレストランを紹介するサイト
 
-Things you may want to cover:
 
-* Ruby version
+### 使用したGems:
+1. simple_form 
+2. bootstrap-sass
+3. jquery-rails
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Description Rails: 5.1.5, Database: PostgreSQL
